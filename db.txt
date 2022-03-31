@@ -1,0 +1,35 @@
+create database  SchoolMgmt;
+
+use schoolmgmt;
+
+create table student  ( 
+    id INT(10) AUTO_INCREMENT, 
+    dept char(20),
+    name char(20),
+    nid INT(15),
+    birth date,
+    address char (30),
+	
+	PRIMARY KEY(id) 
+);
+
+insert into student values ( '', 'CSE', 'Tanjim','4587','1998-10-31','Dhaka');
+insert into student values ( '', 'EEE', 'Rahat','7854','1998-07-15','Dhaka' );
+select * from student;
+
+
+use schoolmgmt;
+create table teacher  ( 
+    id INT(10) AUTO_INCREMENT, 
+    dept char(20),
+    name char(20),
+    nid INT(15),
+    birth date,
+    address char (30),
+	
+	PRIMARY KEY(id) 
+);
+
+insert into teacher values ( '', 'CSE', 'Rifat','5597','1988-08-30','Dhaka');
+insert into teacher values ( '', 'EEE', 'Efty','7124','1984-02-14','Dhaka' );
+select * from teacher;
